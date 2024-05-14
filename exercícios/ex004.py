@@ -1,0 +1,7 @@
+algo = input('Digite alguma coisa: ')
+print('O tipo primitivo desse algo é: ', type(algo))
+print('O que foi digitado está em caixa alta?', algo.isupper())
+print('O que foi digitado é alfabético?', algo.isalpha())
+print('O que foi digitado é apenas número(s)?',algo.isnumeric())
+print( 'O que foi digitado está totalmente em caixa baixa?', algo.islower())
+#captalizada = nem apenas maiusculas, nem apenas minusculas .istitle()
