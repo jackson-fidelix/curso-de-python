@@ -1,4 +1,4 @@
-nome_completo = input('Digite seu nome completo: ')
+nome_completo = str(input('Digite seu nome completo: ')).strip()
 print('De acordo com o que foi digitado, seu nome completo é: {}!'.format(nome_completo))
-nome_split = nome_completo.split()
-print('Seu primeiro nome é {} e o sobrenome {}!'.format(nome_split[0], nome_split[-1]))
+novo_nome = nome_completo.split()
+print('Seu primeiro nome é {} e o sobrenome {}!'.format(novo_nome[0], novo_nome[-1]))

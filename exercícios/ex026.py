@@ -1,4 +1,4 @@
-frase = input('Digite uma frase qualquer: ')
+frase = input('Digite uma frase qualquer: ').strip()
 novafrase = frase.upper()
 letra = 'A'
 quantidadeA = novafrase.count(letra)
