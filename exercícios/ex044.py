@@ -19,8 +19,10 @@ else:
         print('Você escolheu a modalidade À VISTA NO CARTÃO e terá 5% de desconto.'
               ' O valor de sua compra agora é de R${:.2f}'.format(novo_preco))
     elif escolha == 3:
-        print('Você escolheu a modalidade 2x NO CARTÃO seu preço será o mesmo.'
-              ' O valor de sua compra é de R${:.2f}'.format(preco_produto))
+        total  = preco_produto
+        parcela = total / 2
+        print('Você escolheu a modalidade 2x NO CARTÃO, 2x de R${:.2f} .' 
+              ' O valor total de sua compra ainda é de R${:.2f}'.format(parcela, preco_produto))
     else:
         novo_preco = preco_produto + (preco_produto * 0.20)
         print('Você escolheu a modalidade 3x OU MAIS NO CARTÃO e terá 20% de juros.'
