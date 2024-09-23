@@ -1,4 +1,4 @@
-#leia nome, idade e sexo de 4 pessoas e mostre
+#leia nome, idade e sexo de 4 pessoas e mostre...
 soma_idades = 0
 idade_homem_velho = 0
 nome_homem_velho = ''
@@ -6,7 +6,7 @@ mulheres_abaixo_de_vinte = 0
 for i in range(1, 4+1):
     nome = str(input('Digite seu nome: '))
     idade = int(input('Digite sua idade: '))
-    sexo = str(input('Qual é seu sexo?(M = Masculino e F = Feminino): ')).upper()
+    sexo = str(input('Qual é seu sexo?(M = Masculino | F = Feminino): ')).upper()
     soma_idades += idade
     media_idades = int(soma_idades / 4)
     if sexo == 'M' and idade > idade_homem_velho:
@@ -14,11 +14,9 @@ for i in range(1, 4+1):
         idade_homem_velho = idade
     elif sexo == 'F' and idade < 20:
         mulheres_abaixo_de_vinte += 1
-    elif sexo != 'M' or sexo != 'F':
-        print('Opção de sexo inválida!')
-        
-print('=-'*20)
-print(f'A média de idade do grupo é {media_idades} anos.')
-print(f'O homem mais velhor é o Sr. {nome_homem_velho} e ele possui {idade_homem_velho} anos!')
-print(f'Há {mulheres_abaixo_de_vinte} mulheres com menos de 20 anos!')
-print('=-'*20)
+
+print('\033[1;33m=-\033[m'*30)
+print(f'\033[1m A média de idade do grupo é {media_idades} anos.\033[m')
+print(f'\033[1;32m O homem mais velho é o Sr. {nome_homem_velho} e ele possui {idade_homem_velho} anos!\033[m')
+print(f'\033[1;35m Há {mulheres_abaixo_de_vinte} mulheres com menos de 20 anos! \033[m')
+print('\033[1;33m=-\033[m'*30)
