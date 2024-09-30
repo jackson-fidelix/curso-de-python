@@ -5,5 +5,5 @@ soma_pa = 0
 for i in range(10):
     termo_atual = primeiro_termo + i * razao
     soma_pa += termo_atual
-    print(termo_atual)
+    print(termo_atual, end=' → ')
 print('A soma da PA é de {}'.format(soma_pa))
