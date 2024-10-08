@@ -1,4 +1,6 @@
 Python Course🚀 Python Fundamentals Portfolio | JackTech 🐍
+
+
 Bem-vindo ao Python Fundamentals JackTech! 🎯 Este repositório reúne diversos exercícios práticos desenvolvidos ao longo do curso básico de Python, com foco nos principais conceitos da linguagem. Aqui, você encontrará exemplos que demonstram o uso de estruturas de controle (if, else, for, while), manipulação de strings, e interações simples com o usuário. 💻
 ___
 
@@ -17,7 +19,7 @@ Clone o repositório para sua máquina local:
 
 bash
 Copiar código
-git clone https://github.com/seu-usuario/PythonFundamentalsPortfolioJackTech.git
+git clone https://github.com/jackson-fidelix/curso-de-python.git
 Navegue até o diretório de um dos exercícios ou projetos:
 
 bash
