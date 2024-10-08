@@ -4,9 +4,10 @@ idade_homem_velho = 0
 nome_homem_velho = ''
 mulheres_abaixo_de_vinte = 0
 for i in range(1, 4+1):
-    nome = str(input('Digite seu nome: '))
-    idade = int(input('Digite sua idade: '))
-    sexo = str(input('Qual é seu sexo?(M = Masculino | F = Feminino): ')).upper()
+    print(f'----- {i}ª pessoa -----')
+    nome = str(input('Nome: '))
+    idade = int(input('Idade: '))
+    sexo = str(input('Sexo: [M | F]: ')).upper()
     soma_idades += idade
     media_idades = int(soma_idades / 4)
     if sexo == 'M' and idade > idade_homem_velho:
