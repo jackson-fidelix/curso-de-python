@@ -1,3 +1,4 @@
+#melhorar o exercício 51 sobre PA
 primeiro_termo = int(input('1° Termo: '))
 razao = int(input('Razão: '))
 i = 0
