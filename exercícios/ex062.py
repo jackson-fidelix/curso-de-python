@@ -9,20 +9,21 @@ quant_termos = 10
 while i != quant_termos:
     termo_atual = primeiro_termo + razao * i
     soma_pa += termo_atual
-    print(f'{termo_atual} ', end=" | ") 
+    print(f'{termo_atual} ', end="| ") 
     termos.append(str(termo_atual))
     i += 1
-    if i == 10:
-        termos_extras = int(input('\n Deseja mostrar mais quantos termos? '))
-        if termos_extras == 0:
-            print('!Fim do programa!')
-        else:
-            quant_termos +=  termos_extras
-            while i != quant_termos:
-                termo_atual = primeiro_termo + razao * i
-                soma_pa += termo_atual
-                termos.append(str(termo_atual))
-                i += 1
+
+while True:
+    termos_extras = int(input('\n Deseja mostrar mais quantos termos? '))
+    if termos_extras == 0:
+        break
+    quant_termos +=  termos_extras
+    while i != quant_termos:
+        termo_atual = primeiro_termo + razao * i
+        soma_pa += termo_atual
+        print(f'{termo_atual} ', end="| ") 
+        termos.append(str(termo_atual))
+        i += 1
 
 print('===#'* (quant_termos + 5))
 print(f'Esses são os {quant_termos} primeiros termos da PA: ')

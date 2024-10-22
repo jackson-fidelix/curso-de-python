@@ -1,6 +1,6 @@
 sexo = 'letra'
 while sexo != 'F' and sexo != 'M':
-    sexo = str(input('Digite a INICIAL do seu sexo: ')).upper()
+    sexo = str(input('Digite a INICIAL do seu sexo: ')).upper().strip() [0]
     if sexo != 'F' and sexo != 'M':
         print('Você digitou a letra ERRADA!')
     elif sexo == 'F':
