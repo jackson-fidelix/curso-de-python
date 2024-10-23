@@ -6,5 +6,5 @@ while len(termos_fibonacci) < escolha:
     proximo_termo = termos_fibonacci[-1] + termos_fibonacci[-2]
     termos_fibonacci.append(proximo_termo)
 
-print(f'Abaixo segue os \033[1;31m{escolha}\033[m primeiros termos de FIBONACCI: ')
+print(f'Abaixo segue os \033[1;31m{escolha}\033[m primeiros termos da Sequência de FIBONACCI: ')
 print(f'\033[1;32m {termos_fibonacci[:escolha]} \033[m')
