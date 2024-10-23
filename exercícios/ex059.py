@@ -1,3 +1,4 @@
+#Criando um Menu de Opções
 n1 = int(input('Digite o 1° número: '))
 n2 = int(input('Digite o 2° número: '))
 escolha = 99
@@ -10,7 +11,9 @@ while escolha != 5:
     print('[5] - Sair do Programa')
     print('=---'*8)
     escolha = int(input('Qual é a sua escolha? '))
-    if escolha == 1:
+    if escolha != 1 and escolha != 2 and escolha != 3 and escolha != 4 and escolha != 5:
+        print('Opção INVÁLIDA...Tente novamente!')  
+    elif escolha == 1:
         print(f'A soma entre {n1} e {n2} é {n1 + n2}!')
     elif escolha == 2:
         print(f'A multiplicação entre {n1} e {n2} é {n1 * n2}!')
