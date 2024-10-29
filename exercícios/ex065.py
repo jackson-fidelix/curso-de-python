@@ -12,8 +12,7 @@ while continuar != 'NÃO':
     soma += numero
     contador += 1
     if maior == 0 and menor == 0:
-        maior = numero
-        menor = numero
+        maior = menor = numero
     elif numero > maior:
         maior = numero
     elif numero < menor:
