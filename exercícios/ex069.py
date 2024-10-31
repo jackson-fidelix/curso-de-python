@@ -17,7 +17,7 @@ while True:
     age = int(input('Qual é a sua idade? '))
     if age > 18:
         older += 1
-        if sex == 'F' and age < 20:
+    if sex == 'F' and age < 20:
             young_women += 1
     print('-'*30)
     decision = str(input('Deseja parar? [S/N] ')).upper().strip()
@@ -28,6 +28,9 @@ while True:
         continue
     else:
         print('\033[4;31mOpção incorreta, tente novamente.\033[m')
+
+print('\033[1;30;47m=\033[m'*40)
 print(f'\033[1;33mHá {older} pessoas com mais de 18 anos!\033[m')
 print(f'\033[1;34mHá {male} homens cadastrados!\033[m')
 print(f'\033[1;32mHá {young_women} mulheres com menos de 20 anos!\033[m')
+print('\033[1;30;47m=\033[m'*40)
