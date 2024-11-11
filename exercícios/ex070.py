@@ -30,7 +30,7 @@ while True:
         break
     else:
         print('Opção inválida!')
-    
+print('{:^40}'.format('\033[1;31mFIM DO PROGRAMA\033[m'))
 print(f'O o total de gastos é R$\033[1;31m{prices_sum:.2f}\033[m!')
 print(f'Existem \033[4;33m{expensive_product}\033[m produtos que custam mais de R$1000,00!')
 print(f'O produto mais barato é \033[1;32m{cheaper_name}\033[m e ele custa R$\033[1;32m{cheaper_price:.2f}\033[m!')

@@ -1,8 +1,8 @@
 #crie um caixa eletrônico, no início deverá perguntar ao usuário qual o valor a ser sacado e o programa informará quantas cédulas de cada valor serão entregues.
-# considere que o caixa possui cédulas de R$50,R$20,R$10 e R$1
+#considere que o caixa possui cédulas de R$50,R$20,R$10 e R$1
 
 print('==='*10)
-print('BANCO J & A'.center(30))
+print('\033[1;33mBANCO J & A\033[m'.center(40))
 print('==='*10)
 
 saque = int(input('Qual é o valor que deseja sacar? '))
@@ -29,6 +29,7 @@ while True:
                     print(f'Total de {cedulas_1} cédulas de R$1,00')        
     break
 
-
+print('='*30)
+print('{:^40}'.format('\033[4;32mVolte sempre ao Banco J % A\033[m'))
 
 
