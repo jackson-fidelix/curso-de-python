@@ -20,4 +20,8 @@ a = (2, 5, 4)
 b = (5, 8, 1, 2)
 c = a + b
 print(c)
-print(c.index(8))
+#esse comando pega sempr o primeiro índice do número em questão(no caso o 5)
+print(c.index(5))
+#deslocamento para pegar outro índice do número 5
+print(c.index(5, 2))
+
