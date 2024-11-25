@@ -15,3 +15,11 @@ for verbos in words:
         print(f'A palavra {verbos.upper()} contém as vogais: {', '.join(vogais_encontradas)}')
     else:
         print(f'A palavra {verbos.upper()} não contém vogais!')
+
+#jeito mais fácil, sem variável e com menos linhas de código
+print('\nOUTRA FORMA DE FAZER O EXERCÍCIO!')
+for palavra in words:
+    print(f'\nNa palavra {palavra.upper()}, temos: ', end='')
+    for letra in palavra:
+        if letra in 'aeiou':
+            print(letra, end=', ')
