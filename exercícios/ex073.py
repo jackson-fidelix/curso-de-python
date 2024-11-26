@@ -12,7 +12,7 @@ print(f'Os 4 últimos colocados são: \n{time_brasileiro2024[-4:]} ')
 print('===-==='*10)
 print(f'A classificação em Ordem Alfabética seria: \n{sorted(time_brasileiro2024)}')
 print('===-==='*10)
-print(f'O VERDÃO está na posição: {time_brasileiro2024.index('Palmeiras')}')
+print(f'O VERDÃO está na posição: {time_brasileiro2024.index('Palmeiras')+1}')
 print('===-==='*10)
 
 
