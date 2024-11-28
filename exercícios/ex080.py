@@ -17,5 +17,6 @@ for i in range(5):
             if num <= numeros[valor]:
                 numeros.insert(valor, num)
                 print(f'Número {num} adicionado na posição {valor} da lista!')
-                break            
+                break 
+print('===-'*10)           
 print(f'A lista Ordenada é: {numeros}')
