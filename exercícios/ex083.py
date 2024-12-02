@@ -3,11 +3,18 @@
 # está com parênteses abertos e fechados na ordem correta.
 
 frase = str(input('Digite uma expressão: '))
-for letra in frase:
-    quant_aberto = frase.count('(')
-    quant_fechado = frase.count(')')
-
-if quant_aberto == quant_fechado:
+pilha = []
+for simb in frase:
+    if simb == '(':
+        pilha.append('(')
+    elif simb == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
+if len(pilha) == 0:
     print('\033[1;32mEssa expressão está correta!\033[m')
 else:
-    print(f'Sua expressão está errada, pois contém \033[1;31m{quant_aberto} "(" parênteses abertos\033[m e \033[1;31m{quant_fechado} ")" fechados\033[m')
+    print('\033[1;31mSua expressão está errada!\033[m')
+    print(pilha)
