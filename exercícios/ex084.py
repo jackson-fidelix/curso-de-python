@@ -30,7 +30,8 @@ while True:
     else:
         print('Resposta incorreta... Tente novamente!')
         resp = str(input('Quer continuar? [S/N] ')).upper()[0]
-
+print('=-='*10)
+print(f'Os dados foram {pessoas}')
 print(f'Ao todo, você cadastrou {len(pessoas)} pessoas.')
 print(f'O maior peso é {peso_maior}Kg. Peso de ', end="")
 for p in pessoas:
@@ -41,3 +42,5 @@ print(f'\nO menor peso é {peso_menor}Kg. Peso de ', end="")
 for p in pessoas:
     if p[1] == peso_menor:
         print(f'{p[0]}', end='| ')
+print()        
+print('=-='*10)
