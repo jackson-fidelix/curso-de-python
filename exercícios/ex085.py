@@ -11,7 +11,7 @@ for i in range(0,7):
     else:
         numeros[1].append(valor)    
 
-print('-=-'*10)
+print('-=-='*15)
 print(f'A lista em ordem crescente de números pares é {sorted(numeros[0])}')
 print(f'A lista em ordem crescente de números ímpares é {sorted(numeros[1])}')
-print('-=-'*10)
+print('-=-='*15)
