@@ -2,20 +2,16 @@
 #cadastre-os em uma lista única que mantenha separado os valores pares
 #e ímpares. No final mostre os valores pares e ímpares em ordem crescente
 
-numeros = []
-pares = []
-impares = []
+numeros = [[], []]
 
 for i in range(0,7):
-    num = int(input(f'Digite o {i + 1}º número: '))
-    if num % 2 == 0: 
-        pares.append(num)
+    valor = int(input(f'Digite o {i + 1}º número: '))
+    if valor % 2 == 0: 
+        numeros[0].append(valor)
     else:
-        impares.append(num)    
+        numeros[1].append(valor)    
 
-numeros.append(pares)
-numeros.append(impares)
-
-print('-='*30)
+print('-=-'*10)
 print(f'A lista em ordem crescente de números pares é {sorted(numeros[0])}')
 print(f'A lista em ordem crescente de números ímpares é {sorted(numeros[1])}')
+print('-=-'*10)
