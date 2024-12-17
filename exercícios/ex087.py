@@ -20,7 +20,8 @@ for l in range(0, 3):
     for c in range(0, 3):
         print(f'[{matriz[l][c]:^6}]', end=" ")
     print()
-print('=-'*20)
+print('=-'*22)
 print(f'A soma dos valores pares é {soma_pares}.')
 print(f'A soma dos valores da terceira coluna é {soma_TerColuna}.')
 print(f'O maior valor da segunda linha é {max(matriz[1])}.')
+print('=-'*22)
