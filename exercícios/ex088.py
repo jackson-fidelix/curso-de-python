@@ -11,10 +11,14 @@ print('---'*11)
 resp = int(input('Quantos jogos você quer que eu sorteie? '))
 print()
 cont = 0
+total_jogos = []
 print(f"{f' SORTEANDO {resp} JOGOS ':=^33}")
 while cont != resp:
     jogos = [randint(1,60), randint(1,60), randint(1,60), randint(1,60), randint(1,60), randint(1,60)]
-    print(f'Jogo {cont + 1}: {jogos}')
+    total_jogos.append(jogos[:])
+    jogos.clear()
     cont += 1
-    sleep(1) 
 print(f'{' < BOA SORTE! > ':=^33}')
+for i, v in enumerate(total_jogos):
+    print(f'Jogo {i+1}: {v}')
+    sleep(1)
