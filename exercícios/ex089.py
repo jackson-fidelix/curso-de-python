@@ -26,7 +26,6 @@ print(f'{"Nº":<4}{"NOME":<10}{"MÉDIA":>8}')
 print('-='*15)
 for i, aluno in enumerate(boletim):
     print(f'{i:<4}{aluno[0]:<10}{aluno[2]:>8.2f}')
-    print()
 print('--'*15)
 
 while True:
@@ -34,7 +33,7 @@ while True:
     print('===='*10)
     if opc == 999:
         print('Finalizando...')
-        print(f'{"VOLTE SEMPRE":=^30}')
+        print(f'{" VOLTE SEMPRE ":=^30}')
         break
     elif opc >= 0 and opc < len(boletim):
         print(f'As notas de {boletim[opc][0]} são {boletim[opc][1]}')
