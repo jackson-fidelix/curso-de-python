@@ -13,7 +13,7 @@ dados['Idade'] = datetime.today().year - nascimento
 dados['Ctps'] = int(input('Carteira de Trabalho [0 não tem]: '))
 
 if dados['Ctps'] == 0:
-    print('==='*14)
+    print('\033[1;31m===\033[m'*14)
     for k,v in dados.items():
         print(f'{k} tem o valor {v}')
 elif dados['Ctps'] != 0:
@@ -22,6 +22,6 @@ elif dados['Ctps'] != 0:
     anos_trab = datetime.today().year - dados['Ano de Contratação']
     anos_restantes = 35 - anos_trab
     dados['Aposentadoria'] = dados['Idade'] + anos_restantes
-    print('==='*14)
+    print('\033[1;31m===\033[m'*14)
     for k,v in dados.items():
-        print(f'{k} tem o valor {v}')
+        print(f'\033[1;33m{k}\033[m tem o valor \033[1;32m{v}\033[m')
