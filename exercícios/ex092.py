@@ -19,9 +19,8 @@ if dados['Ctps'] == 0:
 elif dados['Ctps'] != 0:
     dados['Ano de Contratação'] = int(input('Ano de Contratação: '))
     dados['Salário'] = float(input('Salário [R$]: '))
-    anos_trab = datetime.today().year - dados['Ano de Contratação']
-    anos_restantes = 35 - anos_trab
-    dados['Aposentadoria'] = dados['Idade'] + anos_restantes
+    dados['Aposentadoria'] = dados['Idade'] + (35 - (datetime.today().year - dados['Ano de Contratação']))
     print('\033[1;31m===\033[m'*14)
     for k,v in dados.items():
         print(f'\033[1;33m{k}\033[m tem o valor \033[1;32m{v}\033[m')
+    print('\033[1;31m===\033[m'*14)
