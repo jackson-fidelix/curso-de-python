@@ -1,7 +1,7 @@
 
 ---
 
-# 🚀 Python Fundamentals Portfolio | JackTech 🐍
+# 🚀 Python Portfolio | JackTech 🐍
 
 Bem-vindo ao **Python Fundamentals JackTech**! 🎯 Este repositório reúne diversos exercícios práticos desenvolvidos ao longo do curso básico de Python, com foco nos principais conceitos da linguagem. Aqui, você encontrará exemplos que demonstram o uso de **estruturas de controle** (if, else, for, while), **manipulação de strings**, e **interações simples** com o usuário. 💻
 
