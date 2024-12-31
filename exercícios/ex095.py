@@ -11,7 +11,7 @@ while True:
     gols = []
     totgols = 0
     for i in range(1, partidas + 1):
-        gol = int(input(f'Quantos gols o jogador fez na {i}º partida? '))
+        gol = int(input(f'  Quantos gols o jogador fez na {i}º partida? '))
         gols.append(gol)
         totgols += gol
     estatisticas['Nome'] = nome
@@ -30,9 +30,10 @@ while True:
         resp = str(input("Deseja continuar? [S/N]")).upper()[0]    
 
 print('=-=-'*13)
-print(f'{"Cód.":^4} {"Nome":^8} {"Gols":^15} {"Total":^8}')
+print(f'{"Cód.":<4} {"Nome":<15} {"Gols":<15} {"Total":^8}')
+print('----'*12)
 for idx, val in enumerate(jogadores):
-    print(f"{idx:^4} {val['Nome']:^8} {str(val['Gols']):^15} {val['Total']:^8}")
+    print(f"{idx:^4} {val['Nome']:<15} {str(val['Gols']):<15} {val['Total']:^8}")
 print('=-=-'*13)
 
 while True:
@@ -42,10 +43,12 @@ while True:
         print(f'{" FINALIZANDO... ":*^30}')
         print(f'{" VOLTE SEMPRE ":=^30}')
         break
-    elif opc >= 0 and opc < len(jogadores):
+    elif 0 <= opc < len(jogadores):
+        print('----'*12)
         print(f'--LEVANTAMENTO DO JOGADOR {jogadores[opc]['Nome']}:')
         for idx, val in enumerate(jogadores[opc]['Gols']):
             print(f'No jogo {idx + 1}, fez {val} gol(s).'.center(30))
+        print('----'*12)
     else:
         print('Aluno não encontrado!!!')
         opc = int(input('Deseja visualizar qual jogador? [999 interrompe]: '))
