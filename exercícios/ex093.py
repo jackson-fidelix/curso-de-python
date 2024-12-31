@@ -27,4 +27,5 @@ for key, value in estatisticas.items():
 print('=-=-'*15)
 print(f'O jogador {estatisticas["Nome"]} jogou {partidas} partidas!')
 for idx, value in enumerate(gols):
-    print(f'=> Na partida {idx + 1}, fez {value} gol(s).')
+    print(f'   => Na partida {idx + 1}, fez {value} gol(s).')
+print(f'Foi um total de {estatisticas["Total"]} gols.')
