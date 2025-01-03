@@ -6,7 +6,7 @@ soma(4, 5)
 soma(8, 9)
 # ou explicitar
 soma(a = 2, b = 1)
-soma(a = 4, b = 1)
+soma(b = 4, a = 1)
 
 
 #Segunda Explicação
