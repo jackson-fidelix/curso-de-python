@@ -1,13 +1,25 @@
-def título(txt):
-    print('-'*30)
-    print(txt)
-    print('-'*30)
+def soma(a, b):
+    soma = a + b
+    print(soma)
+
+soma(4, 5)
+soma(8, 9)
+# ou explicitar
+soma(a = 2, b = 1)
+soma(a = 4, b = 1)
+
 
 #Segunda Explicação
-título('        CURSO EM VÍDEO  ')
-título('        APRENDA PYTHON  ')
-título('        JACKSON FIDELIX  ')
+#def título(txt):
+#    print('-'*30)
+#    print(txt)
+#    print('-'*30)
 
+
+#título('        CURSO EM VÍDEO  ')
+#título('        APRENDA PYTHON  ')
+#título('        JACKSON FIDELIX  ')
+#-----------------------
 
 
 #primeira explicação
