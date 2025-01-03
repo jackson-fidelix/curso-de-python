@@ -2,6 +2,7 @@ def soma(a, b):
     soma = a + b
     print(soma)
 
+#se não explicitar, o primeiro valor vai para A e o segundo para B
 soma(4, 5)
 soma(8, 9)
 # ou explicitar
