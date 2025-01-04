@@ -4,28 +4,37 @@
 #A)De 1 até 10, de 1 em 1
 #B)De 10 até 0, de 2 em 2
 #C) uma contagem personalizada.
+from time import sleep
 
 def contador(início,fim, passo):
     if passo == 0:
         passo = 1 
-    if início > fim or passo < 0: 
-        passo_ajustado =  (passo + passo) - passo 
-        print('-=-='*8)
-        print(f'Contagem de {início} até {fim} de {passo_ajustado} em {passo_ajustado}')
-        for c in range(início, fim - 1, -passo):
-            print(f'{c}', end=" ")
+    if início > fim and passo < 0: 
+        print(f'Contagem de {início} até {fim} de {-passo} em {-passo}')
+        for c in range(início, fim - 1, passo):
+            print(f'{c}', end=" ", flush=True)
+            sleep(0.8)
         print('FIM!')
-        print('-=-='*8)
+        print('-=-='*11)
+    elif início > fim and passo > 0:
+        print('-=-='*11)
+        print(f'Contagem de {início} até {fim} de {passo} em {passo}')
+        for c in range(início, fim - 1, -passo):
+            print(f'{c}', end=" ", flush=True)
+            sleep(0.8)
+        print('FIM!')
     else:  
         print(f'Contagem de {início} até {fim} de {passo} em {passo}')
         for c in range(início, fim + 1, passo):
-            print(f'{c}', end=" ")
+            print(f'{c}', end=" ", flush=True)
+            sleep(0.8)
         print('FIM!')
-        print('-=-='*8)
+        print('-=-='*11)
 
 
 contador(1, 10, 1)
 contador(10, 0, -2)
+print('Agora é a sua vez de personalizar a contagem!')
 inicial   = int(input('INÍCIO: '))
 final = int(input('FIM: '))
 passo = int(input('PASSO: '))
