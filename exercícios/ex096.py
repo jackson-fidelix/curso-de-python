@@ -7,6 +7,9 @@ def área(largura, comprimento):
     print(f'A área de um terreno {largura} x {comprimento} é de {area:.2f}m².')
 
 
-largura = float(input('LARGURA (m): '))
-comprimento = float(input('ALTURA (m): '))
-área(largura, comprimento)
+print('=-'*10)
+print('Controle de Terrenos')
+print('=-'*10)
+larg = float(input('LARGURA (m): '))
+comp = float(input('ALTURA (m): '))
+área(larg, comp)
