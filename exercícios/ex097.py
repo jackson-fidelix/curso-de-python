@@ -3,9 +3,10 @@
 #com tamanho adaptável. 
 
 def escreva(word):
-    print('-' * len(word))
-    print(f' {word} ')
-    print('-' * len(word))
+    tam = len(word) +4
+    print('-' * tam)
+    print(f'  {word}')
+    print('-' * tam)
 
 escreva(' Teste um, dois, três...   ')
 escreva(' Jackson Felipe Fidelix   ')
