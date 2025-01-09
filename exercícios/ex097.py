@@ -8,6 +8,6 @@ def escreva(word):
     print(f'  {word}')
     print('-' * tam)
 
-escreva(' Teste um, dois, três...   ')
-escreva(' Jackson Felipe Fidelix   ')
-escreva(' Funções em Python -  Aprendendo!   ')
+escreva('Teste um, dois, três...')
+escreva('Jackson Felipe Fidelix')
+escreva('Funções em Python -  Aprendendo!')
