@@ -10,7 +10,7 @@ def sorteio(num):
     print('Sorteando 5 valores da lista: ', end=" ")
     for i in range(num):
         sort = randint(0, 10)
-        print(f'{sort}', end=" ")
+        print(f' \033[1;43m {sort} \033[m', end=" ")
         numeros.append(sort)
     print('PRONTO!')
 
@@ -19,10 +19,9 @@ def somaPar(txt):
     for i, v in enumerate(numeros):
         if v % 2 == 0:
             soma_pares += v
-    print(txt, end="")
-    print(soma_pares)
+    print(f'Somando os valores pares de \033[4;31m{numeros}\033[m, temos \033[1;42m {soma_pares} \033[m!')
 
     
 numeros = []
 sorteio(5)
-somaPar(f'Somando os valores pares de {numeros}, temos ')
+somaPar(numeros)
