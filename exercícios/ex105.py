@@ -1,3 +1,4 @@
+
 #Faça um programa que tenha uma função notas() que pode receber várias notas 
 #de alunos e vai retornar um dicionário com as seguintes informações:
 #Quantidade de notas
@@ -12,20 +13,20 @@ def notas(* notas, sit = False):
     :param sit: vaçor opcional, indicando se deve ou não adicionar a situação
     :return: dicionário com várias informações sobre a situação da turma
     """
-    resp = {}
-    resp['total'] = len(notas)
-    resp['maior'] = max(notas)
-    resp['menor'] = min(notas)
-    resp['média'] = sum(notas) / len(notas)
+    result = {}
+    result['total'] = len(notas)
+    result['maior'] = max(notas)
+    result['menor'] = min(notas)
+    result['média'] = sum(notas) / len(notas)
 
     if sit == True:
-        if resp['média'] > 7:
-            resp['situação'] = 'BOA'
-        elif resp['média'] >= 5:
-            resp['situação'] = 'RAZOÁVEL'
+        if result['média'] >= 7:
+            result['situação'] = 'BOA'
+        elif result['média'] >= 5:
+            result['situação'] = 'RAZOÁVEL'
         else:
-            resp['situação'] = 'RUIM' 
-    return resp
+            result['situação'] = 'RUIM' 
+    return result
 
 
 resp = notas(10, 6, 5, sit=True)
