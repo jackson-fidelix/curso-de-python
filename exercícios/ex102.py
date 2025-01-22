@@ -11,25 +11,33 @@ def fatorial(num, show = False):
     :return: O valor fatorial de um número n
     """
     fat = 1
-    numbers = []
-
-    while  num != 0:
-        fat = fat * num
-        #join funciona apenas com strings, portanto preciso converter
-        numbers.append(str(num)) 
-        num -= 1
-    if show:
-        print(" x ".join(numbers), "=", fat)
-    else:
-        print(fat)
-    
+    for c in range(num, 0, -1):
+        if show:
+            print(c, end="")
+            if c > 1:
+                print(' x ',end="")
+            else:
+                print(' = ', end="")
+        fat *= c
     return fat
 
-print("---"*15)
-resultado = fatorial(7, True)
-print(f'O Fatorial retornado: {resultado}.')
-other_result = fatorial(10)
-print(f'O Fatorial retornado: {other_result}.')
-another_result = fatorial(3, True)
-print(f'O Fatorial retornado: {another_result}.')
+    #segunda forma de fazer
+    # numbers = []
+    # while  num != 0:
+    #     fat = fat * num
+    #     #join funciona apenas com strings, portanto preciso converter
+    #     numbers.append(str(num)) 
+    #     num -= 1
+    # if show:
+    #     print(" x ".join(numbers), "=", fat)
+    # else:
+    #     print(fat)   
+    # return fat
+    
+
+print("---"*16)
+print(fatorial(5, True))
+print(fatorial(10))
+print(fatorial(3, True))
 help(fatorial)
+print("---"*16)
