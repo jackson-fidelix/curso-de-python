@@ -31,4 +31,3 @@ def notas(* notas, sit = False):
 
 resp = notas(10, 6, 5, sit=True)
 print(resp)
-help(notas)
