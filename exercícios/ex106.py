@@ -14,7 +14,6 @@ c = {
 }
 
 
-
 def ajuda(comando):
     titulo(f"Acessando o manual do comando \'{user}\'", 4)
     print(c[6])
