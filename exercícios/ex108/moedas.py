@@ -16,5 +16,6 @@ def metade(p):
     return p / 2
 
 
-def moeda():
-    
+def moeda(p):
+    return f'R${p:.2f}'.replace('.', ',')
+
