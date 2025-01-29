@@ -4,11 +4,9 @@
 # apenas valores que sejam monetários
 
 import sys
-#sys.path.append('e:\MeusProjetos\curso-de-python\exercícios')
-#from ex112.utilidadesCeV import moeda
-sys.path.append('c:\Windows\Temp')
+sys.path.append('e:\MeusProjetos\curso-de-python\exercícios')
 from ex112.utilidadesCeV import dado
-
+from ex112.utilidadesCeV import moeda
 
 p = dado.leiaDinheiro('Digite o preço: R$')
-moeda.resumo(price, 80, 35)
+moeda.resumo(p, 80, 35)
