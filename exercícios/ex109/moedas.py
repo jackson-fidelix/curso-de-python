@@ -13,15 +13,17 @@ def diminuir(p, n, situacao = False):
 
 
 def dobro(p, situacao = False):
+    resp = p * 2
     if situacao:
-        return moeda(p * 2)
-    return p * 2
+        return moeda(resp)
+    return resp
 
 
 def metade(p, situacao = False):
+    res = p /2
     if situacao:
-        return moeda(p / 2)
-    return p / 2
+        return moeda(res)
+    return res
 
 
 def moeda(p):

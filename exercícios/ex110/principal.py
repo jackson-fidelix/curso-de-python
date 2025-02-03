@@ -7,4 +7,4 @@ from ex110 import moedas
 
 
 price = float(input('Digite o preço: R$'))
-moedas.resumo(price, 80, 35)
+moedas.resumo(price, 20, 12)
