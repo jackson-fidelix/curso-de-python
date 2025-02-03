@@ -9,8 +9,10 @@ def diminuir(p, n):
 
 
 def dobro(p):
-    return p * 2
+    resposta = p *2
+    return resposta
 
 
 def metade(p):
-    return p / 2
+    res = p / 2
+    return res
