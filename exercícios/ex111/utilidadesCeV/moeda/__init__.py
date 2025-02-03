@@ -13,15 +13,17 @@ def diminuir(p, n, situacao = False):
 
 
 def dobro(p, situacao = False):
+    resp = p * 2
     if situacao:
-        return moeda(p * 2)
-    return p * 2
+        return moeda(resp)
+    return resp
 
 
 def metade(p, situacao = False):
+    resp = p / 2
     if situacao:
-        return moeda(p / 2)
-    return p / 2
+        return moeda(resp)
+    return resp
 
 
 def moeda(p):
@@ -31,10 +33,9 @@ def resumo(preco, aumento, desconto):
     print('---'*10)
     print('RESUMO DO VALOR'.center(30))
     print('---'*10)
-    print(f'Preço analisado: {moeda(preco):>12}')
-    print(f'Dobro do preço: {moeda(preco * 2):>14}')
-    print(f'Metade do preço: {moeda(preco / 2):>12}')
-    print(f'{aumento}% de aumento: {moeda(aumentar(preco, aumento)):>13}')
-    print(f'{desconto}% de redução: {moeda(diminuir(preco, desconto)):>13}')
+    print(f'Preço analisado: \t{moeda(preco)')
+    print(f'Dobro do preço: \t{moeda(preco * 2)')
+    print(f'Metade do preço: \t{moeda(preco / 2)')
+    print(f'{aumento}% de aumento: \t{moeda(aumentar(preco, aumento))')
+    print(f'{desconto}% de redução: \t{moeda(diminuir(preco, desconto))')
     print('---'*10)
-
