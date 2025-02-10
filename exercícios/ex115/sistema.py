@@ -6,15 +6,17 @@ import sys
 # coloque o caminho do seu projeto, provavelmente será diferente do meu
 sys.path.append('e:\MeusProjetos\curso-de-python\exercícios')
 from ex115.lib.interface import *
+from time import sleep
 
 while True:
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
-        print(f'Opção {resposta} selecionada')
+        cabeçalho(f'Opção {resposta} selecionada')
     elif resposta == 2:
-        print(f'Opção {resposta} selecionada')
+        cabeçalho(f'Opção {resposta} selecionada')
     elif resposta == 3:
-        print('Saindo do sistema... Até logo!')
+        cabeçalho('Saindo do sistema... Até logo!')
         break
     else:
-        print('ERRO! Digite uma opção válida!')
+        print('\033[31mERRO! Digite uma opção válida!\033[m')
+        sleep(2)
