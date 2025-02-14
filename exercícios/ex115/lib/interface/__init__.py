@@ -7,6 +7,7 @@ def cabeçalho(txt):
     print(txt.center(42))
     print(linha())
 
+
 def leiaInt(msg):
     while True:
         try:
@@ -21,7 +22,6 @@ def leiaInt(msg):
             return n
     
 
-
 def menu(lista):
         cabeçalho('MENU PRINCIPAL')
         c = 1
@@ -30,7 +30,3 @@ def menu(lista):
             c += 1
         opc = leiaInt('\033[1;32mSua opção:\033[m ')
         return opc
-
-
-
-
