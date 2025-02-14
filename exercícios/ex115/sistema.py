@@ -6,6 +6,7 @@ import sys
 import os
 # coloque o caminho do seu projeto, provavelmente será diferente do meu
 sys.path.append(r'e:\MeusProjetos\curso-de-python\exercícios')
+
 from ex115.lib.interface import *
 from ex115.lib.arquivo import *
 from time import sleep
@@ -13,10 +14,9 @@ from time import sleep
 arq = 'dados.txt'
 
 if not arquivoExiste(arq):
-    print('Arquivo não encontrado!')
     criarAquivo(arq)
-else:
-    print('Arquivo encontrado...')
+# else:
+#     print('Arquivo encontrado...')
     #onde esta o arquivo?  >>> print(f"Arquivo criado em: {os.path.abspath(arq)}")
 
 while True:
@@ -24,7 +24,10 @@ while True:
     if resposta == 1:
         lerArquivo(arq)
     elif resposta == 2:
-        cabeçalho(f'Opção {resposta} selecionada')
+        cabeçalho(f'NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = int(input('Idade: '))
+        cadastrar(arq, nome, idade)
     elif resposta == 3:
         cabeçalho('Saindo do sistema... Até logo!')
         break
